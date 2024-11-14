@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://prasiddhaacharya.com.np/sitemap.xml

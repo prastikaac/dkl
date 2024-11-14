@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "c33fac50-75d1-4d8e-a391-2e8e3e30f5b8",
+    });
+  });
+</script>
+
+</head>
+<body>
+    <h1>Hello</h1>
+</body>
+
+
+<script>// JavaScript for detecting internet connection status and displaying the "No Internet" page
+
+    // Function to check internet connection status
+    function checkInternetConnection() {
+        return navigator.onLine; // Returns true if online, false if offline
+    }
+    
+    // Function to display the "No Internet" page
+    function showNoInternetPage() {
+        // Load the "No Internet" page content into the current page
+        fetch('no_internet.html')
+            .then(response => response.text())
+            .then(data => {
+                document.body.innerHTML = data;
+            });
+    }
+    
+    // Function to initialize the internet connection check
+    function initInternetConnectionCheck() {
+        // Check internet connection status when the page loads
+        if (!checkInternetConnection()) {
+            showNoInternetPage();
+        }
+    
+        // Check internet connection status whenever the connection changes
+        window.addEventListener('online', function () {
+            document.location.reload(); // Reload the page when internet connection is restored
+        });
+    
+        window.addEventListener('offline', function () {
+            showNoInternetPage(); // Display the "No Internet" page when connection is lost
+        });
+    }
+    
+    // Initialize internet connection check
+    initInternetConnectionCheck();
+    </script>
+</html>
