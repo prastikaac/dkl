@@ -6,9 +6,9 @@ import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyCMfEhAeJE_BQ8eQyK6Mn52hiGf3LeXzcg",
-  authDomain: "Pradipacharya-com-np.firebaseapp.com",
-  projectId: "Pradipacharya-com-np",
-  storageBucket: "Pradipacharya-com-np.appspot.com",
+  authDomain: "PradipDhakal-com-np.firebaseapp.com",
+  projectId: "PradipDhakal-com-np",
+  storageBucket: "PradipDhakal-com-np.appspot.com",
   messagingSenderId: "912047485186",
   appId: "1:912047485186:web:23dab6d9bc527d8a84d21b",
   measurementId: "G-TCFKJ034P3"
