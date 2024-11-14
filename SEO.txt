@@ -1,7 +1,7 @@
 On Page SEO
 
 1. SEO title (60 words) : 
-Prasiddha Acharya | News 
+Pradip Acharya | News 
 
 
 2. SEO description: (160 words) :
@@ -16,7 +16,7 @@ How to check class 12 result, NEB class 12 result, class 12 result 2080, SLC, re
 <body mainIn blogMn mnBr 
 
 5. Link with keywords :
-Class 12 Result refers to : https://prasiddhaacharya.com.np/neb/class-12-result-2080
+Class 12 Result refers to : https://pradipd.com.np/neb/class-12-result-2080
 
 6. Rank from Social media platforms : Youtube video, Facebook, Twitter, Telegram 
 
@@ -39,7 +39,7 @@ I. Backlinks
 Fast Page Indexing :
 
 1. Update sitemap with new url and submit it to the google using :
-https://google.com/ping?sitemap=https://prasiddhaacharya.com.np/sitemap.xml
+https://google.com/ping?sitemap=https://pradipd.com.np/sitemap.xml
 
 2. Remove Sitemap & Put it again from Search Console
 

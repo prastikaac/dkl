@@ -13,7 +13,7 @@
 
 1. Content copy strict!
 
-2. Prasiddha's Blog
+2. Pradip's Blog
 
 3. Adsense unfil
 
@@ -26,7 +26,7 @@ Search Bar :
 
   <script>
                 function submitSearch() {
-                  var baseUrl = "https://prasiddhaacharya.com.np/search?q=";
+                  var baseUrl = "https://pradipd.com.np/search?q=";
                   var searchValue = document.getElementById("searchIn").value.trim().toLowerCase();
                   var searchUrl = baseUrl + encodeURIComponent(searchValue);
                   window.location.href = searchUrl;

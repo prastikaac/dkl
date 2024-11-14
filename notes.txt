@@ -9,7 +9,7 @@ Code :
                                       ];
 
                                       // Base URL for the images
-                                      const baseUrl = "https://prasiddhaacharya.com.np/images/class-11-computer/";
+                                      const baseUrl = "https://pradipd.com.np/images/class-11-computer/";
 
                                       // Reference to the image gallery container
                                       const imageGallery = document.getElementById("imageGallery");
@@ -43,7 +43,7 @@ Code :
 -----------------------------------------------------
 
    <div class="zmImg">
-                             <img alt="NEB Class 11 Computer Science All Notes Pdf Nepal Grade 11 Computer Science Notes" src="https://prasiddhaacharya.com.np/images/class-11-computer/347844435_1260029217939628_801178576240366677_n.jpg" width="1280" height="720" onclick="return false">
+                             <img alt="NEB Class 11 Computer Science All Notes Pdf Nepal Grade 11 Computer Science Notes" src="https://pradipd.com.np/images/class-11-computer/347844435_1260029217939628_801178576240366677_n.jpg" width="1280" height="720" onclick="return false">
                              </div>
 
 
