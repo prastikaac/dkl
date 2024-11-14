@@ -25,23 +25,22 @@
             background-color: #000;
             overflow: hidden;
             font-family: 'Montserrat', sans-serif;
+            color: #fff;
         }
 
         /* Main Container Styling */
         #container {
             text-align: center;
-            color: #fff;
             font-size: 6vw; /* Responsive font size */
             font-weight: 900;
             text-transform: uppercase;
+            visibility: hidden; /* Initially hidden until audio plays */
         }
 
         /* First Text (Hold my Dick) with Glitch Effect */
         #firstText {
-            color: #fff;
             animation: glitch 1.5s steps(5, end) infinite;
             font-size: 7vw;
-            opacity: 1;
         }
 
         #firstText::before,
@@ -64,7 +63,7 @@
         /* Second Text (Coz I'm PraDick) with Drop-in and Flash Effects */
         #secondText {
             display: none;
-            font-size: 7vw; /* Increased size for full-screen visibility */
+            font-size: 7vw;
             color: #ffcc00;
             opacity: 0;
             animation: beat 0.5s ease-in-out infinite, flashColor 1s ease-in-out 0.7s 3 alternate;
@@ -172,19 +171,32 @@
     </div>
 
     <!-- Background Audio -->
-    <audio id="audio" src="slimshady.m4a" autoplay loop hidden></audio>
+    <audio id="audio" src="slimshady.m4a" autoplay hidden></audio>
 
     <script>
         const audio = document.getElementById('audio');
         const firstText = document.getElementById('firstText');
         const secondText = document.getElementById('secondText');
+        const container = document.getElementById('container');
+
+        // Hide everything initially and show the black screen
+        container.style.visibility = 'hidden';
 
         // Wait for the audio to start playing
         audio.addEventListener('play', () => {
+            // Show the container once the audio starts playing
+            container.style.visibility = 'visible';
+
+            // Show the first text after a small delay for smooth appearance
+            setTimeout(() => {
+                firstText.style.display = 'block'; // Show first text
+            }, 500);
+
+            // After 4.5 seconds, hide the first text and show the second
             setTimeout(() => {
                 firstText.style.display = 'none'; // Hide the first text
                 secondText.style.display = 'block'; // Show the second text
-            }, 4500); // Delay before showing the second text (after 4.5 seconds)
+            }, 4500);
         });
     </script>
 </body>
